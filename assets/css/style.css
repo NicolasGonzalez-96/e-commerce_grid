@@ -12,7 +12,7 @@ header{
 }
 menu {
     grid-area: menu;
-    background-color: antiquewhite;
+    background-image: url(../imgs/background.jpg);
 }
 
 menu h3 {
@@ -40,6 +40,7 @@ menu p {
 
 main {
     grid-area: main;
+    background-image: url(../imgs/background.jpg);
 }
 
 footer {
@@ -56,21 +57,23 @@ footer {
     "header header"
     "menu main"
     "footer footer";
-    gap: 10px;
 }
 
 div .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    padding-top: 15px;
+    gap: 15px;
 }
 
 .grid-item {
     border: solid 1px black;
+    background-color: white;
 }
 
 .grid-item img {
-    width: 60vh
+    width: 60vh;
+    padding: 15px;
 }
 
 .card-body {
